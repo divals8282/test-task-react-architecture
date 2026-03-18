@@ -1,0 +1,13 @@
+:root {
+  --bg: #ffffff;
+  --bg-transparent: #ffffffb2;
+  --text: #111111;
+  --primary: #78c2d8;
+}
+
+[data-theme="dark"] {
+  --bg: #111111;
+  --bg-transparent: #111111b2;
+  --text: #f5f5f5;
+  --primary: #78c2d8;
+}

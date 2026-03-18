@@ -1,0 +1,19 @@
+.typeography {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text);
+  &--bold {
+    font-family: bold;
+  }
+
+  &--small {
+    font-size: 1rem;
+  }
+
+  &--medium {
+    font-size: 1.25rem;
+  }
+
+  &--large {
+    font-size: 1.5rem;
+  }
+}

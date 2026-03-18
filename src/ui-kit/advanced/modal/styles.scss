@@ -1,0 +1,29 @@
+.modal {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1000;
+  opacity: 0;
+  background: var(--bg-transparent);
+  transition: ease-in-out 0.3s opacity;
+  &--open {
+    z-index: 1000;
+    opacity: 1;
+  }
+  &__window {
+    position: fixed;
+    border: 1px solid var(--primary);
+    padding: 10px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
+}

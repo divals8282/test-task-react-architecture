@@ -1,0 +1,17 @@
+.ui-kit-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  &__component {
+    &--title {
+      border-bottom: 1px solid var(--primary);
+      width: 200px;
+      margin-bottom: 20px;
+    }
+    &--variants {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
