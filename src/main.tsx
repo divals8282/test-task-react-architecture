@@ -4,9 +4,13 @@ import { createRoot } from "react-dom/client";
 import "./styles/aggregator.scss";
 
 import { Router } from "./router";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { queryClient } from "./query-client";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Router />
+    <QueryClientProvider client={queryClient}>
+      <Router />
+    </QueryClientProvider>
   </StrictMode>,
 );

@@ -1,0 +1,40 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    &__info {
+      white-space: no-wrap;
+    }
+    &__image {
+      img {
+        width: 150px;
+      }
+    }
+  }
+}
+
+.card-modal {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    &__info {
+      white-space: no-wrap;
+    }
+    &__image {
+      img {
+        width: 150px;
+      }
+    }
+  }
+}

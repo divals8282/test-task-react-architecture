@@ -10,7 +10,9 @@ export const Modal: ComponentT = ({ children, title, onClose, open }) => {
       <div className="modal__window" onClick={(e) => e.stopPropagation()}>
         <div className="modal__window__header">
           <div className="modal__window__header__title">
-            <Typeography>{title}</Typeography>
+            <Typeography>
+              <b>{title}</b>
+            </Typeography>
           </div>
           <div className="modal__window__header__action">
             <Button onClick={onClose}>Close</Button>
