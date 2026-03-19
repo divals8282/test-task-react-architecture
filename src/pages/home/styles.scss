@@ -1,2 +1,12 @@
 .home-page {
+  &__filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    &__filter {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
 }

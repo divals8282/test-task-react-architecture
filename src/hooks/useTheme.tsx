@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import { useTheme } from "./stores/theme";
+import { useTheme as useThemeStore } from "../stores/theme";
 
-export const ThemeProvider = () => {
-  const { theme } = useTheme();
+export const useTheme = () => {
+  const { theme } = useThemeStore();
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);

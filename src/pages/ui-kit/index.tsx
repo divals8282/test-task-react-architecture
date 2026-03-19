@@ -4,6 +4,7 @@ import { Input } from "../../ui-kit/input";
 import { Button } from "../../ui-kit/button";
 import { Modal } from "../../ui-kit/advanced/modal";
 import { useState } from "react";
+import { Select } from "../../ui-kit/select";
 
 export const UIKit = () => {
   const [modalState, setModalState] = useState(false);
@@ -15,9 +16,21 @@ export const UIKit = () => {
           <Typeography size="large">Typeography</Typeography>
         </div>
         <div className="ui-kit-page__component--variants">
-          <Typeography size="large">Home Page</Typeography>
-          <Typeography size="medium">Home Page</Typeography>
-          <Typeography size="small">Home Page</Typeography>
+          <Typeography size="large">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quam!
+            Fuga quae iure corrupti at ipsam! Magni molestiae nobis saepe!
+            Blanditiis ipsum suscipit, eaque vero modi enim fugiat odit dolores.
+          </Typeography>
+          <Typeography size="medium">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quam!
+            Fuga quae iure corrupti at ipsam! Magni molestiae nobis saepe!
+            Blanditiis ipsum suscipit, eaque vero modi enim fugiat odit dolores.
+          </Typeography>
+          <Typeography size="small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quam!
+            Fuga quae iure corrupti at ipsam! Magni molestiae nobis saepe!
+            Blanditiis ipsum suscipit, eaque vero modi enim fugiat odit dolores.
+          </Typeography>
         </div>
       </div>
       <div className="ui-kit-page__component">
@@ -39,18 +52,31 @@ export const UIKit = () => {
             onClose={() => setModalState(false)}
             title="Modal Title"
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
-            sapiente cum fugiat, eius veritatis nulla est nam sint, maxime,
-            dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex ipsum.
-            dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex ipsum.
-            dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex ipsum.
-            dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex ipsum.
-            dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex ipsum.
-            dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex ipsum.
-            dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex ipsum.
-            dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex ipsum.
-            dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex ipsum.
+            <Typeography>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Asperiores sapiente cum fugiat, eius veritatis nulla est nam sint,
+              maxime, dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex
+              ipsum. dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex
+              ipsum. dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex
+              ipsum. dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex
+              ipsum. dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex
+              ipsum. dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex
+              ipsum. dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex
+              ipsum. dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex
+              ipsum. dolorem aspernatur! Culpa qui cumque id et dolor, ipsa ex
+              ipsum.
+            </Typeography>
           </Modal>
+        </div>
+      </div>
+      <div className="ui-kit-page__component">
+        <div className="ui-kit-page__component--title">
+          <Typeography size="large">Select</Typeography>
+        </div>
+        <div className="ui-kit-page__component--variants">
+          <Select>
+            <option>Test</option>
+          </Select>
         </div>
       </div>
     </section>

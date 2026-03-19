@@ -5,7 +5,7 @@
   height: 100vh;
   z-index: -1000;
   opacity: 0;
-  background: var(--bg-transparent);
+  background-color: var(--bg-transparent);
   transition: ease-in-out 0.3s opacity;
   &--open {
     z-index: 1000;
